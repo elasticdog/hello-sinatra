@@ -50,7 +50,7 @@ For actually developing a new Sinatra app, you won't want to be stuck reloading 
 
 You can use the [`watchr` gem](https://github.com/mynyml/watchr) along with the included `spec.watchr` file to run your tests automatically every time you update your app or tests (similar to ZenTest/autotest).
 
-    $ watchr spec.watchr
+    $ watchr specs.watchr
 
 **Note:** _Installing the `ruby-fsevents` gem will make Watchr more efficient by having the OS notify Watchr about new changes directly, rather than having it regularly poll the filesystem._
 
