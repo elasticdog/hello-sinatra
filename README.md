@@ -3,7 +3,7 @@ Hello Sinatra
 
 Hello Sinatra is a barebones, classic-style [Sinatra](http://www.sinatrarb.com/) application that utilizes Ruby 1.9.x, [Bundler](http://gembundler.com/) for managing dependencies, [Slim](http://slim-lang.com/) for templates, [Compass](http://compass-style.org/) (Sass) for CSS, and [MiniTest::Spec](http://bfts.rubyforge.org/minitest/) for tests.
 
-It is meant to be a blank slate that will give you a head start with developing your own application with this specific technology stack.
+It is meant to be a blank slate that will give you a head start when developing your own application with this specific technology stack.
 
 Getting Started
 ---------------
@@ -64,7 +64,7 @@ To automatically run your tests, you can use the [`watchr` gem](https://github.c
 Contribute
 ----------
 
-Have ideas on how to make Hello Sinatra better? Great! Just [fork the project](http://help.github.com/fork-a-repo/), make your changes, and then [send a pull request](http://help.github.com/send-pull-requests/).
+Have ideas on how to make Hello Sinatra better? Great! Just [fork the project](http://help.github.com/fork-a-repo/), create a new branch, make your changes, push them back, and [send a pull request](http://help.github.com/send-pull-requests/).
 
 License
 -------
