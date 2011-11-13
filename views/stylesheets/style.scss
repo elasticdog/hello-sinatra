@@ -1,0 +1,13 @@
+$brown: #a52a2a;
+$margin: 16px;
+
+h1 {
+  color: $brown;
+  margin: $margin;
+}
+
+p {
+  color:
+    darken($brown, 30%);
+  margin-left: $margin * 2;
+}

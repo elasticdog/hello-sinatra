@@ -2,9 +2,11 @@ source 'http://rubygems.org'
 
 gem 'sinatra'
 gem 'slim'
+gem 'compass'
 
 group :development do
   gem 'ruby-fsevent'
+  gem 'shotgun'
   gem 'watchr'
 end
 
