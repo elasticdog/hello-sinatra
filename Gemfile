@@ -6,7 +6,6 @@ gem 'compass'
 
 group :development do
   gem 'ruby-fsevent'
-  gem 'shotgun'
   gem 'watchr'
 end
 
