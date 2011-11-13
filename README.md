@@ -19,7 +19,8 @@ That will launch the app using WEBrick at [http://localhost.com:4567/](), so ope
 
 To run the included tests:
 
-    $ rake test
+<pre>$ rake test                 <i># run tests normally</i>
+$ rake test TESTOPTS="-v"   <i># run in verbose mode</i></pre>
 
 Getting Fancy
 -------------
@@ -59,6 +60,11 @@ To automatically run your tests, you can use the [`watchr` gem](https://github.c
     $ watchr specs.watchr
 
 **Note:** _Installing the `ruby-fsevents` gem makes things more efficient by having the OS notify Watchr about new changes directly, rather than having it regularly poll the filesystem._
+
+Contribute
+----------
+
+Have ideas on how to make Hello Sinatra better? Great! Just [fork the project](http://help.github.com/fork-a-repo/), make your changes, and then [send a pull request](http://help.github.com/send-pull-requests/).
 
 License
 -------
