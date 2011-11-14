@@ -25,7 +25,7 @@ $ rake test TESTOPTS="-v"   <i># run in verbose mode</i></pre>
 Getting Fancy
 -------------
 
-Assuming you want a bit more functionality than "Hello world!", here's how things are hooked together...
+Assuming you want add a bit more functionality than "Hello world!", here's how things are organized...
 
     hello-sinatra/
     ├── spec/
