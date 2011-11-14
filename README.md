@@ -25,7 +25,7 @@ $ rake test TESTOPTS="-v"   <i># run in verbose mode</i></pre>
 Getting Fancy
 -------------
 
-Assuming you want a bit more functionality than "Hello world!", here's how things are organized...
+Assuming you want a bit more functionality than "Hello world!", here's how things are hooked together...
 
     hello-sinatra/
     ├── spec/
@@ -50,13 +50,13 @@ Make your application changes in `my_app.rb`, template changes under the `views/
 Automation
 ----------
 
-For actually developing a new Sinatra app, you won't want to be stuck manually reloading WEBrick and running `rake test` every time you make a change. Luckily, there are ways to automate reloading the appropriate services whenever you save your app.
+When developing a new Sinatra app, you don't want to be stuck manually reloading WEBrick and running `rake test` every time you make a change. Luckily, there are ways to automate reloading the appropriate services whenever you save your app.
 
-To automatically reload the development Rack server, there are a couple of possibilities...if you're on OS X, the [Pow](http://pow.cx/) project makes local development extremely convenient (more so when adding the [`powder` gem](https://github.com/Rodreegez/powder) on top as a command-line wrapper); or you can use the [`shotgun` gem](https://github.com/rtomayko/shotgun) to fork and reload the server on every request.
+To automatically reload your development server, there are a couple of possibilities...if you're on OS X, the [Pow](http://pow.cx/) project makes this process incredibly straight forward (more so when adding the [`powder` gem](https://github.com/Rodreegez/powder) on top as a command-line wrapper); or you can use the [`shotgun` gem](https://github.com/rtomayko/shotgun) to fork and reload the server on every request.
 
     $ shotgun config.ru
 
-To automatically run your tests, you can use the [`watchr` gem](https://github.com/mynyml/watchr) along with the included `specs.watchr` file. This is similar to using ZenTest/autotest, but a bit more flexible.
+To automatically run your tests, you can use the [`watchr` gem](https://github.com/mynyml/watchr) along with the included `specs.watchr` file. This is similar to using ZenTest/autotest, but Watchr gives you a bit more flexibility.
 
     $ watchr specs.watchr
 
