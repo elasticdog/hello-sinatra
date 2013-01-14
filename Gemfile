@@ -3,6 +3,7 @@ source 'http://rubygems.org'
 gem 'sinatra'
 gem 'slim'
 gem 'compass'
+gem 'thin'
 
 group :development do
   gem 'ruby-fsevent'
