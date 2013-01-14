@@ -15,7 +15,7 @@ Open up your favorite terminal emulator and...
     $ bundle install
     $ ruby my_app.rb
 
-That will launch the app using WEBrick at [http://localhost.com:4567/](), so open up a browser and bask in all the "Hello world!" glory. You can press `Ctrl-C` in the terminal to shut things down and get back to the command prompt.
+That will launch the app using Thin at [http://localhost.com:9292/](), so open up a browser and bask in all the "Hello world!" glory. You can press `Ctrl-C` in the terminal to shut things down and get back to the command prompt.
 
 To run the included tests:
 
@@ -43,7 +43,7 @@ Assuming you want add a bit more functionality than "Hello world!", here's how t
     ├── Rakefile
     ├── config.ru
     ├── my_app.rb
-    └── specs.watchr
+    └── Guardfile
 
 Make your application changes in `my_app.rb`, template changes under the `views/` directory, stylesheet changes under `views/stylesheets/`, and test changes under the `spec/` directory. Create a top-level `lib/` directory for any additional Ruby modules you want to include, and a `public/` directory for static files.
 
@@ -56,11 +56,11 @@ To automatically reload your development server, there are a couple of possibili
 
     $ shotgun config.ru
 
-To automatically run your tests, you can use the [`watchr` gem](https://github.com/mynyml/watchr) along with the included `specs.watchr` file. This is similar to using ZenTest/autotest, but Watchr gives you a bit more flexibility.
+To automatically run your tests, you can use the [`guard` gem](https://github.com/guard/guard) along with the included `Guardfile`. This is similar to using ZenTest/autotest, but guard gives you a bit more flexibility.
 
-    $ watchr specs.watchr
+    $ guard
 
-**Note:** _Installing the `ruby-fsevents` gem makes things more efficient by having the OS notify Watchr about new changes directly, rather than having it regularly poll the filesystem._
+There are a couple of recepies defined in the `Guardfile`, feel free to add your own!
 
 Contribute
 ----------
