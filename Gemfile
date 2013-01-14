@@ -15,4 +15,5 @@ group :test do
   gem 'rake'
   gem 'minitest'
   gem 'rack-test', :require => 'rack/test'
+  gem 'turn'
 end
