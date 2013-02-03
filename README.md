@@ -15,7 +15,7 @@ Open up your favorite terminal emulator and...
     $ bundle install
     $ ruby my_app.rb
 
-That will launch the app using Thin at [http://localhost.com:9292/](), so open up a browser and bask in all the "Hello world!" glory. You can press `Ctrl-C` in the terminal to shut things down and get back to the command prompt.
+That will launch the app using Thin at [http://localhost.com:4567/](), so open up a browser and bask in all the "Hello world!" glory. You can press `Ctrl-C` in the terminal to shut things down and get back to the command prompt.
 
 To run the included tests:
 
@@ -29,7 +29,8 @@ Assuming you want add a bit more functionality than "Hello world!", here's how t
 
     hello-sinatra/
     ├── spec/
-    │   └── my_app_spec.rb
+    │   ├── my_app_spec.rb
+    │   └── spec_helper.rb
     ├── views/
     │   ├── stylesheets/
     │   │   └── style.scss
@@ -38,12 +39,12 @@ Assuming you want add a bit more functionality than "Hello world!", here's how t
     ├── .gitignore
     ├── Gemfile
     ├── Gemfile.lock
+    ├── Guardfile
     ├── LICENSE
     ├── README.md
     ├── Rakefile
     ├── config.ru
-    ├── my_app.rb
-    └── Guardfile
+    └── my_app.rb
 
 Make your application changes in `my_app.rb`, template changes under the `views/` directory, stylesheet changes under `views/stylesheets/`, and test changes under the `spec/` directory. Create a top-level `lib/` directory for any additional Ruby modules you want to include, and a `public/` directory for static files.
 
